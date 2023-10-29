@@ -1,5 +1,6 @@
 import './App.css'
 import React, {useState} from 'react';
+import reactLogo from './assets/react.svg'
 
 
 function App() {
@@ -66,6 +67,10 @@ function App() {
 
     return (
         <>
+            <div>
+                <img src={reactLogo} className="logo react" alt="React logo" />
+            </div>
+
             <h1>Guess the Number</h1>
 
             {hint && <h2>{hint}</h2>}
@@ -87,13 +92,13 @@ function App() {
             )}
 
             <div>
-                <ul>
-                    {guessHistory.map((guess, index) => (
-                        <li key={index}>Previous guess is -> {guess}</li>
+                <ol>
+                    {guessHistory.map((guess) => (
+                        <li >Previous guess is -> {guess}</li>
                     ))}
-                </ul>
+                </ol>
             </div>
-            <p>Attempts remaining: {guessCount}</p>
+            <button>Attempts remaining: {guessCount}</button>
         </>
     );
 }
