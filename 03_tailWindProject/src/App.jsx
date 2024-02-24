@@ -16,11 +16,11 @@ function App() {
         <>
             <h1 className='bg-purple-400 text-black p-4 rounded-xl'>Lets Do code with chai</h1>
             <Card channel ="Chai Or CODE" object={arr} object2={obj}></Card>
-            <Card2 name="Shivani" profession="Full-Stack Developer"></Card2>
-            <Project></Project>
+            {/*<Card2 name="Shivani" profession="Full-Stack Developer"></Card2>*/}
+            {/*<Project></Project>*/}
             {/*<Card2 name="Shivani"></Card2>*/}
             <PassWordGenApp></PassWordGenApp>
-            <BgChangerApp></BgChangerApp>
+            {/*<BgChangerApp></BgChangerApp>*/}
 
         </>
     )
